@@ -37,9 +37,9 @@ def header_image():
                         url_for('static', filename='img/projects/soho-farmhouse/CM2DAZkL.jpeg'),
                         url_for('static', filename='img/projects/soho-farmhouse/6seWC6EI.jpeg'),
                         url_for('static', filename='img/projects/soho-farmhouse/uXlZjUMM.jpeg'),
-                        url_for('static', filename='img/projects/village-house-interiors/hjtyCIv0.jpeg'),
-                        url_for('static', filename='img/projects/village-house-interiors/u0xthdMZ.jpeg'),
-                        url_for('static', filename='img/projects/village-house-interiors/JASEW__k.jpeg')]
+                        url_for('static', filename='img/projects/village-house-interiors-pool-and-pool-house/hjtyCIv0.jpeg'),
+                        url_for('static', filename='img/projects/village-house-interiors-pool-and-pool-house/u0xthdMZ.jpeg'),
+                        url_for('static', filename='img/projects/village-house-interiors-pool-and-pool-house/JASEW__k.jpeg')]
         return random.choice(index_photos)
     return dict(random_image=random_image)
 

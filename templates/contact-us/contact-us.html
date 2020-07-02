@@ -2,20 +2,21 @@
 
 {% block body %}
   <section class="imageblock switchable height-80">
-    <div class="imageblock__content col-lg-6 col-md-4 pos-right">
-      <div class="map-container" data-maps-api-key="AIzaSyAodquFW7aVsQqDwkjDA9OcpGlSB2a9wcc" data-address="Emma Kirby Design, Oxfordshire" data-marker-title="Emma Kirby Design" data-zoom-controls="RIGHT_BOTTOM" data-map-zoom="16" data-map-style="[]"></div>
-      <script>var marker = new google.maps.Marker({position: uluru, map: map});</script>
+    <div class="imageblock__content col-lg-5 col-md-4 pos-right">
+      <div class="background-image-holder">
+        <img alt="image" src="{{ random_image() }}"/>
+      </div>
     </div>
     <div class="container pos-vertical-center">
       <div class="row text-center">
-        <div class="col-lg-5 col-md-7">
+        <div class="col-lg-6 col-md-7">
           <h1>Contact Us</h1>
           <p class="lead">
             enquiries@emmakirbydesign.com
             <br>+44 13 6781 0575
           </p>
           <p class="lead">
-            The Coach House Studio<br>Home Farm, Bampton<br>Oxfordshire, OX18 2RY
+            The Coach House Studio<br>Home Farm, Grafton<br>Bampton, Oxfordshire<br>OX18 2RY
           </p>
           <div class="modal-instance">
             <a href="#" class="btn btn--primary type--uppercase modal-trigger">Send Us A Message</a>

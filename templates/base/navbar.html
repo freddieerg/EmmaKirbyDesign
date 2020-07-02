@@ -1,0 +1,100 @@
+{% if request.endpoint == 'index' %}
+  {% set index_modifier = true %}
+{% else %}
+  {% set index_modifier = false %}
+{% endif %}
+
+<div class="nav-container" style="overflow: hidden; min-height: auto">
+  <nav id="menu2" class="bar bar-2 bg--dark" data-scroll-class="70px:pos-fixed">
+    {% if index_modifier %}
+      <div style="width: 95%; margin-left: auto; margin-right: auto">
+    {% else %}
+      <div class="container">
+    {% endif %}
+    <div class="row align-items-center">
+      <div class="col hidden-sm hidden-md hidden-lg hidden-xl">
+      </div>
+      <div class="col col-sm-3 text-center-xs">
+        <a href="{{ url_for('index') }}">
+          <img class="hover-brighten" src="{{ url_for('static',filename='img/ekdalt.png') }}"
+               style="width: 50px; border-radius: 1px"
+               alt="Emma Kirby Design Logo">
+        </a>
+        <!--end module-->
+      </div>
+      <div class="col col-sm-6 text-center hidden-xs">
+        <a style="text-decoration: none !important;" href="{{ url_for('index') }}">
+          <h3 style="margin-bottom: 0" class="type--bold hover-brighten"><span style="font-size:30px">E</span>mma <span
+                  style="font-size:30px">K</span>irby <span style="font-size:30px">D</span>esign</h3>
+        </a>
+        <!--end module-->
+      </div>
+      <div class="col col-md-3 text-right">
+        <div class="modal-instance pull-right" style="margin-top: 3px">
+          <a class="modal-trigger" href="#">
+            <i style="font-size: 25px" class="hover-brighten stack-interface stack-menu"></i>
+          </a>
+          <div class="modal-container menu-fullscreen">
+            <div class="modal-content" data-width="100%" data-height="100%">
+              <div class="pos-vertical-center pos-absolute text-center">
+                <div class="heading-block">
+                  <img style="border-radius: 1px" alt="Image" src="{{ url_for('static',filename='img/ekdalt.png') }}"
+                       class="logo image--xs"/>
+                </div>
+                <ul class="menu-vertical" style="font-size: 20px; width: auto">
+                  <li class="h4">
+                    <a href="{{ url_for('index') }}">Home</a>
+                  </li>
+                  <li class="h4">
+                    <a href="{{ url_for('about_us') }}">About Us</a>
+                  </li>
+                  <li class="h4">
+                    <a href="{{ url_for('what_we_do') }}">What We Do</a>
+                  </li>
+                  <li class="h4">
+                    <a href="{{ url_for('projects') }}">Projects</a>
+                  </li>
+                  <li class="h4">
+                    <a href="{{ url_for('contact_us') }}">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <!--end centered-->
+              <div class="pos-absolute pos-bottom text-center">
+                <ul class="social-list list-inline list--hover">
+                  <li>
+                    <a href="https://www.instagram.com/emmakirbydesign/" target="_blank">
+                      <i class="socicon socicon-instagram icon icon--xs"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.pinterest.co.uk/emmakirbydesign/" target="_blank">
+                      <i class="socicon socicon-pinterest icon icon--xs"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.houzz.co.uk/professionals/interior-designers/emma-kirby-design-pfvwgb-pf~1703863429"
+                       target="_blank">
+                      <i class="socicon socicon-houzz icon icon--xs"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="mailto:enquiries@emmakirbydesign.com" target="_blank">
+                      <i class="socicon socicon-mail icon icon--xs"></i>
+                    </a>
+                  </li>
+                </ul>
+                <p class="type--fine-print type--fade">&copy; Copyright 2020 &mdash; Emma Kirby Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of modal instance-->
+        <!--end module-->
+      </div>
+    </div>
+    <!--end of row-->
+    </div>
+    <!--end of container-->
+  </nav>
+</div>

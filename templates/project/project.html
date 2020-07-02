@@ -1,0 +1,54 @@
+{% extends 'base/base.html' %}
+
+{% block body %}
+
+  <section class="cover height-80 imagebg text-center parallax parallax-disable-mobile" data-overlay="3">
+    <div class="background-image-holder" style="filter: brightness(40%);">
+      <img alt="background" src="{{ url_for('static', filename=project.thumbnail) }}"/>
+    </div>
+    <div class="container pos-vertical-center">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>
+            {{ project.title }}
+          </h1>
+          <h4>{{ project.subtitle }}</h4>
+
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+  <section>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
+          <h2>About the Project</h2>
+          <hr>
+          <p class="lead " style="white-space: pre-wrap;">{{ project.description }}</p>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+
+  </section>
+  <section>
+    <div class="container">
+      <div class="row" id="gallery">
+        <div class="col">
+          <div class="slider" data-arrows="true" data-paging="false">
+            <ul class="slides">
+              {% for image in project.images %}
+                <li style="height: 650px; display: flex; align-items: center; justify-content: center; text-align: center; background: url({{  url_for('static',filename='img/projects/' + project.url + '/' + image)  }}) no-repeat center center; background-size: cover;"></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <!--end of col-->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end of container-->
+  </section>
+{% endblock %}

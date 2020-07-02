@@ -1,0 +1,86 @@
+{% extends 'base/base.html' %}
+
+{% block body %}
+  <section class="imageblock switchable feature-large height-80">
+    <div class="imageblock__content col-lg-6 col-md-4 pos-right">
+      <div class="background-image-holder">
+        <img alt="image" src="{{ random_image() }}"/>
+      </div>
+    </div>
+    <div class="container pos-vertical-center">
+      <div class="row ">
+        <div class="col-lg-5 col-md-7">
+          <h1>{{ title }}</h1>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+  <section class="text-center">
+    <div class="container">
+      <div class="testimonial text-center row">
+        <div class="container col-12 col-lg-11">
+          <span class="h3">“The houses we live in should be both uplifting and comforting, a sanctuary from the outside world and a place to relax and revive. We demand a great deal from where we live, so it is important that the right decisions are made to avoid a waste of both time and money.”</span>
+          <h5>Michael Ergatoudis</h5>
+          <span>Development Director</span>
+        </div>
+      </div>
+    </div>
+    <!--end of container-->
+  </section>
+  <section class="imageblock switchable-switch feature-large height-100">
+    <div class="imageblock__content col-lg-6 col-md-4 pos-right">
+      <div class="background-image-holder">
+        <img alt="image" src="{{ url_for('static',filename='img/what-we-do/ex2.jpeg') }}"/>
+      </div>
+    </div>
+    <div class="container pos-vertical-center">
+      <div class="row ">
+        <div class="col-lg-5 col-md-7">
+          <h1>Planning Consultancy</h1>
+          <p class="lead">
+            As well as architectural and interior design experts, we have planning consultants who can advise on the
+            best achievable planning outcome for your home or site and the safest strategy to gain permission. Time and
+            again, our planning advice has exceeded the hopes and expectations of our clients and opened their eyes to
+            new possibilities of what can be achieved.
+          </p>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+  <section class="text-center">
+    <div class="container">
+      <div class="testimonial text-center row">
+        <div class="container col-12 col-lg-11">
+          <span class="h3">“Interiors are a key part of what we do and whether your home is a country house, an urban apartment, a ski chalet or a house by the coast; if it needs a total redesign to make the most of light and space or simply to redecorate and breathe new life into tired interiors we will handle every detail. Building each layer from electrical and lighting design to furniture, fabrics, floor and wall coverings, we deliver a scheme that will comfort and inspire.”</span>
+          <h5>Emma Kirby</h5>
+          <span>Design Director</span>
+        </div>
+      </div>
+    </div>
+    <!--end of container-->
+  </section>
+  <section class="imageblock switchable feature-large height-100">
+    <div class="imageblock__content col-lg-6 col-md-4 pos-right">
+      <div class="background-image-holder">
+        <img alt="image" src="{{ url_for('static',filename='img/what-we-do/ex3.jpeg') }}"/>
+      </div>
+    </div>
+    <div class="container pos-vertical-center">
+      <div class="row ">
+        <div class="col-lg-5 col-md-7">
+          <h1>Project Management</h1>
+          <p class="lead">
+            We can also project manage our own team of knowledgeable builders and sub contracted electricians, plumbers,
+            joiners and decorators to take a house from the design stage to finished product.
+          </p>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+{% endblock %}

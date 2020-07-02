@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ title + ' · Emma Kirby Design' if title else 'Emma Kirby Design'  }}</title>
+
+  <link rel="stylesheet" href="https://use.typekit.net/lwx6mjx.css">
+
+
+  <!--Stylesheets-->
+  {% include 'base/css.html' %}
+
+  <!--Favicon-->
+  {% include 'base/favicon.html' %}
+
+</head>
+<body class="bg--dark">
+
+<div
+        {% if request.endpoint == 'index' %}
+          style="min-height: -webkit-fill-available; min-height: fill-available; display: flex; flex-direction: column"
+        {% endif %}
+>
+
+<!--Navbar-->
+{% include 'base/navbar.html' %}
+
+<!--Body Content-->
+{% block body  %}{% endblock %}
+
+</div>
+
+<!--Footer-->
+{% include 'base/footer.html' %}
+
+<!--Scripts-->
+{% include 'base/js.html' %}
+</body>
+</html>

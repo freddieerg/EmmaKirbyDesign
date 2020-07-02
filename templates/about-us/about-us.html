@@ -1,0 +1,92 @@
+{% extends 'base/base.html' %}
+
+{% block body %}
+  <section class="imageblock switchable feature-large height-80">
+    <div class="imageblock__content col-lg-6 col-md-4 pos-right">
+      <div class="background-image-holder">
+        <img alt="image" src="{{ random_image() }}"/>
+      </div>
+    </div>
+    <div class="container pos-vertical-center">
+      <div class="row ">
+        <div class="col-lg-5 col-md-7">
+          <h1>{{ title }}</h1>
+          <p class="lead">
+            At Emma Kirby Design we help our clients with every stage of creating their home, ensuring that it is
+            perfectly suited to their lifestyle demands.
+          </p>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+  <section class="switchable feature-large">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-md-6">
+          <img alt="Image" class="border--round" src="{{ url_for('static',filename='img/about-us/emma.jpg') }}">
+        </div>
+        <div class="col-md-6 col-lg-5">
+          <div class="switchable__text">
+            <div class="text-block">
+              <h2>Emma Kirby</h2>
+              <span>Design Director</span>
+            </div>
+            <p class="lead">
+              Emma creates beautiful, inspiring and inviting interiors by sourcing and blending the very best of antique, vintage and modern design as well as developing her own bespoke pieces. The layering of texture, colour and lighting deliver perfectly balanced rooms where form and function work seamlessly together giving the client a space in which they can feel comfortable and relaxed.
+            </p>
+            <ul class="social-list list-inline list--hover">
+              <li>
+                <a href="mailto:emma@emmakirbydesign.co.uk" target="_blank">
+                  <i class="socicon socicon-mail icon icon--xs"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com/emmakirbydesign" target="_blank">
+                  <i class="socicon socicon-instagram icon icon--xs"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--end of row-->
+    </div>
+    <!--end of container-->
+  </section>
+  <section class="switchable switchable--switch feature-large">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <div class="col-md-6">
+                            <img alt="Image" class="border--round" src="{{ url_for('static',filename='img/about-us/michael.jpg') }}">
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="switchable__text">
+                                <div class="text-block">
+                                    <h2>Michael Ergatoudis</h2>
+                                    <span>Development Director</span>
+                                </div>
+                                <p class="lead">
+                                    Michael has over 25 years experience directing the design and development of projects in the residential and commercial sector ranging from extensions and renovations, traditional and contemporary new homes and barn conversions, to hotels and private members clubs. Michael's expertise is in assembling and managing the right team to suit the scale, scope and ambition of the project, maximising planning gain and optimising cost efficiency and build quality.
+                                </p>
+                                <ul class="social-list list-inline list--hover">
+                                    <li>
+                                        <a href="mailto:michael@emmakirbydesign.co.uk" target="_blank">
+                                            <i class="socicon socicon-mail icon icon--xs"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/holmesmike" target="_blank">
+                                            <i class="socicon socicon-twitter icon icon--xs"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+{% endblock %}

@@ -37,15 +37,14 @@ projects.append(
     Project(url='soho-farmhouse',
             title='Soho Farmhouse',
             subtitle='Great Tew, Oxfordshire',
-            description='We loved be part of Farmhouse, a private club nestling in 100 acres of beautiful Cotswold '
-                        'countryside.',
+            description='Lying in 100 acres of rolling Oxfordshire countryside, Soho Farmhouse is a private members club just 90 minutes but a world away from London. It was such a pleasure to be part of this hugely exciting project and collaborate with the amazing Soho House team.',
             thumbnail='soho-farmhouse/thumbnail.jpeg',
             images=['uXlZjUMM.jpeg', '6seWC6EI.jpeg', 'kPcqLD1Y.jpeg', 'xwgPWcd1.jpeg', '2wmpVdUZ.jpeg', 'jN6x7don.jpeg', '1Sk3gCOZ.jpeg', 'qGQ3R9Qr.jpeg', 'CRJt219v.jpeg', 'M7x2J0NR.jpeg', 'BizpASHX.jpeg', '8TnvWXZU.jpeg', 'CM2DAZkL.jpeg', 'cZUVxI7k.jpeg', 'A3eZfqiG.jpeg', 'FVof2tuB.jpeg', 'gB8DGYeC.jpeg', 'L4p6a2MP.jpeg', 'QRNsiUjo.jpeg'],
             plans=[]))
 
 projects.append(
-    Project(url='village-house-interiors',
-            title='Village House Interiors',
+    Project(url='village-house-interiors-pool-and-pool-house',
+            title='Village House Interiors, Pool & Pool House',
             subtitle='Oxfordshire',
             description='The owners of this beautiful Georgian village house wanted us to redecorate the master and '
                         'guest bedrooms as well as put in a pool and build a pool house to replace a  rather unloved '
@@ -53,13 +52,13 @@ projects.append(
                         'is now used all summer long. On cooler evenings, meals can be eaten inside the pool house '
                         'which also has a kitchen and wood burning stove, shower and changing areas making it '
                         'completely self contained.',
-            thumbnail='village-house-interiors/thumbnail.jpeg',
+            thumbnail='village-house-interiors-pool-and-pool-house/thumbnail.jpeg',
             images=['JASEW__k.jpeg', 'zGcHR2Km.jpeg', '7CYh0c5E.jpeg', 'hjtyCIv0.jpeg', 'm_RL2C3h.jpeg', 'SEuT65e1.jpeg', 'ByODXZfw.jpeg', 'wLLhGNoS.jpeg', 'u0xthdMZ.jpeg', '9q8Dzi09.jpeg', '01qY-irj.jpeg', 'A-6cU7NS.jpeg', 'BSVtuhAk.jpeg', 'ilU6hKWU.jpeg'],
             plans=[]))
 
 projects.append(
     Project(url='listed-village-house-extension-and-pool',
-            title='Listed Village House Extension and Pool',
+            title='Listed Village House Extension & Pool',
             subtitle='Oxfordshire',
             description='Opening up a dark, small kitchen and utility room was the remit from the clients. We had '
                         'already, some years earlier, put built a pool into a walled rose garden. It was a beautiful '
@@ -71,8 +70,8 @@ projects.append(
                         'do followed by the extension design.  A new kitchen with a 4m long island and new Aga was '
                         'the main focus of the space but also allowed for a seating corner with fireplace, '
                         'breakfast area, pantry and boot room.',
-            thumbnail='listed-village-house-extension-and-pool.png',
-            images=[],
+            thumbnail='listed-village-house-extension-and-pool/thumbnail.jpg',
+            images=['e44QqT7F.jpeg', 'xO9Am0K6.jpeg', '2zkYhVC4.jpeg', '4qFDkTVk.jpeg', 'z-QAOZ4B.jpeg', 'rbbqkM-X.jpeg', 'JNafUbQ7.jpeg', 'tXhGodKW.jpeg', 'd278kzzt.jpeg', 'Wr0K6W4W.jpeg', 'njYw2849.jpeg', 'dWz41ofh.jpeg', 'XmN7fcRq.jpeg', 'RWyadIJb.jpeg', 'd_6-Qv_M.jpeg'],
             plans=[]))
 
 projects.append(
@@ -93,6 +92,6 @@ projects.append(
             description='A single, young professional bought a rundown duplex in Primrose Hill and wanted a light '
                         'filled, contemporary home. Take a look on our Instagram page for the before and after '
                         'photos.',
-            thumbnail='contemporary-london-duplex/thumbnail.jpg',
+            thumbnail='new-build-village-house/thumbnail.jpg',
             images=['A-BIUJlM.jpeg', 'UBSYThMa.jpeg', 'bzUM4YwF.jpeg', 'XmATc-cz.jpeg', '6Eqrsszf.jpeg', '8dsOWuxc.jpeg', 'RneVK1V3.jpeg', 'OgPPr7WW.jpeg', 'evYc6YZZ.jpeg', '9MDreQfs.jpeg'],
             plans=[]))

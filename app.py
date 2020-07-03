@@ -99,5 +99,10 @@ def terms():
     return render_template('base/terms.html', title='Terms')
 
 
+@app.errorhandler(Exception)
+def handle_error(e):
+    return render_template('base/error.html', error=e), e.code
+
+
 if __name__ == '__main__':
     app.run()

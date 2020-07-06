@@ -67,7 +67,7 @@ def projects():
 @app.route('/contact-us', methods=['GET', 'POST'])
 def contact_us():
     if request.method == 'POST':
-        msg = Message('Service Inquiry', sender=(request.form.get('name'), 'no-reply@emmakirbydesign.co.uk'), recipients=['admin@emmakirbydesign.co.uk'], reply_to=request.form.get('email'))
+        msg = Message('Service Inquiry', sender=(request.form.get('name'), 'no-reply@emmakirbydesign.co.uk'), recipients=['enquiries@emmakirbydesign.co.uk'], reply_to=request.form.get('email'))
         msg.html = request.form.get('message')
         mail.send(msg)
         return '1'

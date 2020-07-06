@@ -15,20 +15,20 @@ projects.append(
     Project(url='winter-and-summer-barns-with-pool',
             title='Winter & Summer Barns With Pool',
             subtitle='Oxfordshire',
-            description='Working closely with our clients we designed an area which incorporated a new build, '
-                        'traditional oak framed summer barn, swimming pool and a renovated party barn. We '
-                        'reconfigured the internal layout of the existing barn to create a new kitchen, wine ‘cellar’ '
+            description='Working closely with our clients, we designed an area which incorporated a new '
+                        'oak framed summer barn, a swimming pool and a renovated party barn. We '
+                        'reconfigured the internal layout of the existing barn to create a new kitchen, wine cellar '
                         'and '
-                        'large double height room housing a bar, dining and seating areas on the ground floor and a '
-                        'guest bedroom with and shower room and home office above. It is the perfect place for cosy family film nights '
+                        'large double height room. This houses a bar, dining and seating areas on the ground floor and a '
+                        'guest bedroom with a shower room and home office above. It is the perfect place for cosy family film nights '
                         'thanks to a hidden screen or big parties with its long dining table, bar and state of the '
                         'art sound system.\n\nFor the warmer months, we designed and built a beautiful barn with the '
                         'help of master craftsmen using traditional methods of oak framing for the structure. The '
-                        'plant room, shower and changing rooms sit at one of the barn with an open summer kitchen, '
-                        'bespoke bar with zinc worktop and 5 metre dining table take up the middle section. A '
+                        'plant room, shower and changing rooms sit at one end of the barn with an open summer kitchen, '
+                        'bespoke bar with zinc worktop and a 5 metre dining table takes up the middle section. A '
                         'cosy, underfloor heated television room means younger children can relax when the sun goes '
                         'down after a full day\'s swimming. Reclaimed clay tiles and wooden cladding help to give an aged '
-                        'feel to the barn and metal framed doors to match the replacement doors we put into the party '
+                        'feel to the barn and metal framed doors matching those of the party '
                         'barn unify both buildings.',
             thumbnail='winter-and-summer-barns-with-pool/thumbnail.jpeg',
             images=['psyDmPk6.jpg', 'y7k8dvwj.jpg', '-WHuAFgq.jpg', '1eJPZaS1.jpg', '46koBUpT.jpg', '4wRhxyLw.jpg',

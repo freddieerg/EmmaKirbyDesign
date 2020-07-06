@@ -2474,6 +2474,7 @@ mr = (function (mr, $, window, document){
                 pageDots: false,
                 prevNextButtons: false,
                 autoPlay: true,
+                bgLazyLoad: 1,
                 draggable: (childnum < 2 ? false: true),
                 imagesLoaded: false,
                 accessibility: true,

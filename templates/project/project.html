@@ -40,7 +40,7 @@
           <div class="slider" data-arrows="true" data-paging="false">
             <ul class="slides">
               {% for image in project.images %}
-                <li style="height: 650px; display: flex; align-items: center; justify-content: center; text-align: center; background: url({{  url_for('static',filename='img/projects/' + project.url + '/' + image)  }}) no-repeat center center; background-size: cover;"></li>
+                <li style="height: 650px; display: flex; align-items: center; justify-content: center; text-align: center; background: no-repeat center center; background-size: cover;" data-flickity-bg-lazyload="{{ url_for('static',filename='img/projects/' + project.url + '/' + image) }}"></li>
               {% endfor %}
             </ul>
           </div>

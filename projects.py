@@ -105,10 +105,8 @@ projects.append(
     Project(url='new-build-village-house',
             title='New Build Village House',
             subtitle='Oxfordshire',
-            description='A single, young professional bought a rundown duplex in Primrose Hill and wanted a light '
-                        'filled, contemporary home. Take a look on our Instagram page for the before and after '
-                        'photos.',
+            description='This new build home was designed and built by EKD as a family home for Michael, Emma and their children. Constructed of handmade bricks and roof tiles with traditional lead weighted windows, during construction the house was often mistaken as a Georgian original undergoing renovation work. Each detail from the size of the windows to the brick bond pattern was carefully chosen by Michael who has an exacting eye for detail. These details and the understanding of traditional building methods can often mean the difference between a house that is ‘right’ and one that looks wrong. \n\nThe decision to put a contemporary dining area onto the rear of the house made the most of the south facing garden and to let light flood into the large dining, seating and kitchen area. Internally too the architectural details were carefully chosen. Extra deep skirting boards had to be made by hand and the cornicing was specific to the period. Wider than average internal doors worked perfectly with the scale of the house. The entrance hall with its sweeping oak staircase leads up to a large bespoke roof light which is both impressive and practical; filling the centre of the house with natural light. It was a hard home to leave but horses and a desire for more land meant moving on. “We couldn’t have had a better house whilst our children were young. They were able to run to friends\' houses in the village which gave them a sense of independence. It was a great party house too with so much open plan space. A perfect house for our 30’s!” ',
             thumbnail='new-build-village-house/thumbnail.jpg',
             images=['A-BIUJlM.jpeg', 'UBSYThMa.jpeg', 'bzUM4YwF.jpeg', 'XmATc-cz.jpeg', '6Eqrsszf.jpeg',
-                    '8dsOWuxc.jpeg', 'RneVK1V3.jpeg', 'OgPPr7WW.jpeg', 'evYc6YZZ.jpeg', '9MDreQfs.jpeg'],
+                    '8dsOWuxc.jpeg', 'OgPPr7WW.jpeg', 'evYc6YZZ.jpeg', '9MDreQfs.jpeg'],
             plans=[]))

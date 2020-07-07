@@ -55,11 +55,11 @@ projects.append(
             title='Village House Interiors, Pool & Pool House',
             subtitle='Oxfordshire',
             description='The owners of this beautiful Georgian village house wanted us to redecorate the master and '
-                        'guest bedrooms as well as put in a pool and build a pool house to replace a  rather unloved '
-                        'walled vegetable garden.  New life has been breathed into the formerly neglected area which '
+                        'guest bedrooms as well as create a pool and pool house to replace a  rather unloved '
+                        'walled vegetable garden. New life has been brought into the formerly neglected area which '
                         'is now used all summer long. On cooler evenings, meals can be eaten inside the pool house '
-                        'which also has a kitchen and wood burning stove, shower and changing areas making it '
-                        'completely self contained.',
+                        'which also features a kitchen, wood burning stove, shower and changing areas which make it '
+                        'completely self-contained.',
             thumbnail='village-house-interiors-pool-and-pool-house/thumbnail.jpeg',
             images=['JASEW__k.jpeg', 'zGcHR2Km.jpeg', '7CYh0c5E.jpeg', 'hjtyCIv0.jpeg', 'm_RL2C3h.jpeg',
                     'SEuT65e1.jpeg', 'ByODXZfw.jpeg', 'wLLhGNoS.jpeg', 'u0xthdMZ.jpeg', '9q8Dzi09.jpeg',
@@ -70,11 +70,10 @@ projects.append(
     Project(url='listed-village-house-extension-and-pool',
             title='Listed Village House Extension & Pool',
             subtitle='Oxfordshire',
-            description='Opening up a dark, small kitchen and utility room was the remit from the clients. We had '
-                        'already, some years earlier, built a pool in a walled rose garden. It was a beautiful '
+            description='Opening up a dark, small kitchen and utility room was the brief from the clients. Years earlier, we had worked with them to build a pool in a walled rose garden. It was a beautiful '
                         'part of the property but the young family never used it and it was a waste of precious space. '
                         'Enclosed on all four sides by barns and Cotswold walling, it made the '
-                        'perfect suntrap for the pool. Additionally, We created a seating area around an outdoor '
+                        'perfect suntrap for the pool. Additionally, we created a seating area around an outdoor '
                         'fireplace for when '
                         'the '
                         'nights turn cooler.\n\nIt was lovely to be invited back to help with the house a few years '
@@ -105,7 +104,7 @@ projects.append(
     Project(url='new-build-village-house',
             title='New Build Village House',
             subtitle='Oxfordshire',
-            description='This new build home was designed and built by EKD as a family home for Michael, Emma and their children. Constructed of handmade bricks and roof tiles with traditional lead weighted windows, during construction the house was often mistaken as a Georgian original undergoing renovation work. Each detail from the size of the windows to the brick bond pattern was carefully chosen by Michael who has an exacting eye for detail. These details and the understanding of traditional building methods can often mean the difference between a house that is ‘right’ and one that looks wrong. \n\nThe decision to put a contemporary dining area onto the rear of the house made the most of the south facing garden and to let light flood into the large dining, seating and kitchen area. Internally too the architectural details were carefully chosen. Extra deep skirting boards had to be made by hand and the cornicing was specific to the period. Wider than average internal doors worked perfectly with the scale of the house. The entrance hall with its sweeping oak staircase leads up to a large bespoke roof light which is both impressive and practical; filling the centre of the house with natural light. It was a hard home to leave but horses and a desire for more land meant moving on. “We couldn’t have had a better house whilst our children were young. They were able to run to friends\' houses in the village which gave them a sense of independence. It was a great party house too with so much open plan space. A perfect house for our 30’s!” ',
+            description='This new build home was designed and built by EKD as a family home for Michael, Emma and their children. With its handmade bricks and roof tiles as well as traditional lead weighted windows, the house was often mistaken as a Georgian renovation project during construction. Each detail from the size of the windows to the brick bond pattern was carefully chosen by Michael who has an exacting eye for detail. These details and the understanding of traditional building methods can often mean the difference between a house that is ‘right’ and one that looks wrong. \n\nThe decision to put a contemporary dining area onto the rear of the house made the most of the south facing garden. This allowed light to flood into the large dining, seating and kitchen area. Internally, architectural details were also carefully chosen. Extra deep skirting boards had to be made by hand and the cornicing was specific to the period. Wider than average internal doors worked perfectly with the scale of the house. The entrance hall, with its sweeping oak staircase, leads up to a large bespoke roof light which is both impressive and practical; filling the centre of the house with natural light. “We couldn’t have had a better house whilst our children were young. They were able to run to friends\' houses in the village which gave them a sense of independence. It was a great party house too with so much open plan space. A perfect house for our 30’s, and a difficult one to leave!”',
             thumbnail='new-build-village-house/thumbnail.jpg',
             images=['A-BIUJlM.jpeg', 'UBSYThMa.jpeg', 'bzUM4YwF.jpeg', 'XmATc-cz.jpeg', '6Eqrsszf.jpeg',
                     '8dsOWuxc.jpeg', 'OgPPr7WW.jpeg', 'evYc6YZZ.jpeg', '9MDreQfs.jpeg'],

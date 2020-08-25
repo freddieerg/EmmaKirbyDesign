@@ -3,6 +3,7 @@ import random
 from flask import Flask, render_template, abort, request, url_for
 from projects import projects as project_list
 import os
+import requests
 
 from flask_mail import Mail, Message
 
@@ -37,10 +38,14 @@ def header_image():
                         url_for('static', filename='img/projects/soho-farmhouse/CM2DAZkL.jpeg'),
                         url_for('static', filename='img/projects/soho-farmhouse/6seWC6EI.jpeg'),
                         url_for('static', filename='img/projects/soho-farmhouse/uXlZjUMM.jpeg'),
-                        url_for('static', filename='img/projects/village-house-interiors-pool-and-pool-house/hjtyCIv0.jpeg'),
-                        url_for('static', filename='img/projects/village-house-interiors-pool-and-pool-house/u0xthdMZ.jpeg'),
-                        url_for('static', filename='img/projects/village-house-interiors-pool-and-pool-house/JASEW__k.jpeg')]
+                        url_for('static',
+                                filename='img/projects/village-house-interiors-pool-and-pool-house/hjtyCIv0.jpeg'),
+                        url_for('static',
+                                filename='img/projects/village-house-interiors-pool-and-pool-house/u0xthdMZ.jpeg'),
+                        url_for('static',
+                                filename='img/projects/village-house-interiors-pool-and-pool-house/JASEW__k.jpeg')]
         return random.choice(index_photos)
+
     return dict(random_image=random_image)
 
 
@@ -67,17 +72,23 @@ def projects():
 @app.route('/contact-us', methods=['GET', 'POST'])
 def contact_us():
     if request.method == 'POST':
-        msg = Message('Service Inquiry', sender=(request.form.get('name'), 'no-reply@emmakirbydesign.co.uk'), recipients=['enquiries@emmakirbydesign.co.uk'], reply_to=request.form.get('email'))
-        msg.html = request.form.get('message')
-        mail.send(msg)
-        return '1'
+        grc = requests.post('https://www.google.com/recaptcha/api/siteverify', data=dict(
+            secret='6LeXLsMZAAAAAKoHPnmhevzrEKKTbQ2jkWU258RH',
+            response=request.form.get('g-recaptcha-response')))
+        if grc.json().get('success'):
+            msg = Message('Service Inquiry', sender=(request.form.get('name'), 'no-reply@emmakirbydesign.co.uk'),
+                          recipients=['enquiries@emmakirbydesign.co.uk'], reply_to=request.form.get('email'))
+            msg.html = request.form.get('message')
+            mail.send(msg)
+            return dict(success=True)
+        else:
+            return dict(success=False)
 
     return render_template('contact-us/contact-us.html', title='Contact Us')
 
 
 @app.route('/projects/<project_page>')
 def project(project_page):
-
     result = None
     for p in project_list:
         if p.url == project_page:

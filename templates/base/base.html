@@ -2,8 +2,9 @@
 <html lang="en" style="scroll-behavior: smooth">
 <head>
   <meta charset="UTF-8">
-  <title>{{ title + ' · Emma Kirby Design' if title else 'Emma Kirby Design'  }}</title>
-  <meta name="description" content="Design Studio based in Oxfordshire offering Interior Design, Architectural Design, Bespoke Furniture Design, Development Consultancy, Project Management.">
+  <title>{{ title + ' · Emma Kirby Design' if title else 'Emma Kirby Design' }}</title>
+  <meta name="description"
+        content="Design Studio based in Oxfordshire offering Interior Design, Architectural Design, Bespoke Furniture Design, Development Consultancy, Project Management.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://use.typekit.net/lwx6mjx.css">
@@ -19,16 +20,16 @@
 <body class="bg--dark">
 
 <div
-        {% if request.endpoint == 'index' %}
-          style="min-height: 100vh; display: flex; flex-direction: column"
-        {% endif %}
+    {% if request.endpoint == 'index' %}
+      style="min-height: 100vh; display: flex; flex-direction: column"
+    {% endif %}
 >
 
-<!--Navbar-->
-{% include 'base/navbar.html' %}
+  <!--Navbar-->
+  {% include 'base/navbar.html' %}
 
-<!--Body Content-->
-{% block body  %}{% endblock %}
+  <!--Body Content-->
+  {% block body %}{% endblock %}
 
 </div>
 
@@ -39,11 +40,29 @@
 {% include 'base/js.html' %}
 
 <!-- Google Analytics -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-171561022-1', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<script>
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-171561022-1', 'auto');
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 
+<div class="notification pos-right pos-bottom col-md-4 col-lg-3" id="message-success-notification" style="background: rgba(0,0,0,0.95)"
+     data-animation="from-bottom" data-notification-link="trigger">
+  <div class="boxed boxed--border border--round box-shadow">
+    <div class="text-block">
+      <h3>Message Sent</h3>
+      <p>
+        We have successfully received your message and aim to get back to you within the next working day. Thank you.
+      </p>
+    </div>
+  </div>
+  <div class="notification-close-cross notification-close"></div>
+</div>
 </body>
 </html>

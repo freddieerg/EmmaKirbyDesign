@@ -1,3 +1,6 @@
 {% for js in ['jquery-3.1.1.min', 'parallax', 'flickity.min', 'bg-lazyload', 'isotope.min', 'scripts'] %}
   <script src="{{ url_for('static',filename='js/' + js + '.js') }}"></script>
 {% endfor %}
+
+<!-- Google ReCaptcha v2 -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

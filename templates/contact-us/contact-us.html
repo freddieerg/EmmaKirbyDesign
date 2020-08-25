@@ -24,27 +24,50 @@
               <div class="modal-content" data-width="100%" data-height="100%">
                 <div class="pos-vertical-center pos-absolute text-center">
 
-<div class="container">
+                  <div class="container">
                     <div class="row justify-content-center">
                       <div class="col-md-10 col-lg-8">
-                        <form class="text-left row mx-0 form-email" action="#" method="post" data-success="Thank you for your enquiry. We aim to respond to all messages within 24 hours." data-success-redirect="/contact-us">
+                        <form class="text-left row mx-0" id="contact-us-form" action="#" method="post">
                           <div class="col-md-6">
                             <label>Your Name:</label>
-                            <input type="text" name="name" class="validate-required">
+                            <input type="text" name="name">
                           </div>
                           <div class="col-md-6">
                             <label>Email Address:</label>
-                            <input type="email" name="email" class="validate-required validate-email">
+                            <input type="email" name="email">
                           </div>
                           <div class="col-md-12">
                             <label>Message:</label>
-                            <textarea rows="6" name="message" class="validate-required"></textarea>
+                            <textarea rows="6" name="message"></textarea>
                           </div>
                           <div class="col-md-12">
                             <label class="hidden-xs hidden-sm"></label>
-                            <button type="submit" class="btn btn--primary type--uppercase">Send Enquiry</button>
+                            <button type="submit" class="btn btn--primary type--uppercase g-recaptcha"
+                                    data-sitekey="6LeXLsMZAAAAAEupqa_qZeYysvma0sTA1hvdk-_H" data-callback="onSubmit">
+                              Send Enquiry
+                            </button>
                           </div>
                         </form>
+                        <script>
+                            let contactForm = document.getElementById('contact-us-form');
+
+                            var onSubmit = async (res) => {
+                                let response = await fetch('/contact-us', {
+                                    method: 'POST',
+                                    body: new FormData(contactForm)
+                                });
+
+                                response = await response.json();
+                                if (response.success) {
+                                    mr.modals.closeActiveModal();
+                                    contactForm.reset();
+                                    let notification = document.getElementById('message-success-notification');
+                                    mr.notifications.showNotification(notification);
+                                } else {
+                                    location.reload();
+                                }
+                            }
+                        </script>
                       </div>
                     </div>
                     <!--end of row-->

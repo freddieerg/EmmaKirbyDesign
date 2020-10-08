@@ -1,6 +1,6 @@
 import random
 
-from flask import Flask, render_template, abort, request, url_for
+from flask import Flask, send_file, render_template, abort, request, url_for
 from projects import projects as project_list
 import os
 import requests
@@ -108,6 +108,11 @@ def privacy():
 @app.route('/terms')
 def terms():
     return render_template('base/terms.html', title='Terms')
+
+
+@app.route('/autodiscover/autodiscover.xml')
+def autodiscover():
+    return send_file('static/autodiscover.xml')
 
 
 @app.errorhandler(Exception)
